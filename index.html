@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Code&amp;Rise | 코드앤라이즈 - Full-Stack &amp; AI &amp; Infrastructure</title>
+<meta name="description" content="Code&Rise(코드앤라이즈) - Full-Stack Development · AI Solutions · IT Infrastructure. Web · App · ERP · DB · Server · Cloud · System Integration 전문 1인 IT 기업.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f1f38'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-weight='900' font-size='54' fill='%23ea5b2f' text-anchor='middle'%3E%26%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ PRELOADER ============ -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <div class="preloader-logo">Code<span class="amp">&amp;</span>Rise</div>
+    <div class="preloader-bar"><span></span></div>
+  </div>
+</div>
+
+<!-- ============ CUSTOM CURSOR ============ -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ============ SCROLL PROGRESS ============ -->
+<div class="scroll-progress"><span id="scrollProgressBar"></span></div>
+
+<!-- ============ HEADER ============ -->
+<header id="header" class="header">
+  <div class="container header-inner">
+    <a href="#home" class="logo">
+      <span class="logo-text">Code<span class="amp">&amp;</span>Rise</span>
+      <span class="logo-kr">코드앤라이즈</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul>
+        <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-target="about">About</a></li>
+        <li><a href="#services" class="nav-link" data-target="services">Services</a></li>
+        <li><a href="#career" class="nav-link" data-target="career">Career</a></li>
+        <li><a href="#portfolio" class="nav-link" data-target="portfolio">Work</a></li>
+        <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary btn-sm header-cta">
+      <span>문의하기</span><i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU ============ -->
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#home" class="mobile-link">Home</a></li>
+    <li><a href="#about" class="mobile-link">About</a></li>
+    <li><a href="#services" class="mobile-link">Services</a></li>
+    <li><a href="#career" class="mobile-link">Career</a></li>
+    <li><a href="#portfolio" class="mobile-link">Work</a></li>
+    <li><a href="#contact" class="mobile-link">Contact</a></li>
+  </ul>
+  <a href="#contact" class="btn btn-primary mobile-cta">문의하기</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div id="particles-js" class="particles-bg"></div>
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+  <div class="hero-grid"></div>
+
+  <div class="container hero-inner">
+    <p class="hero-eyebrow animate__animated animate__fadeInDown">
+      <span class="dot-pulse"></span> Freelance IT Studio · 1인 IT 기업
+    </p>
+
+    <h1 class="hero-title">
+      <span class="line">아이디어를 <span class="grad-text">코드</span>로,</span>
+      <span class="line">비즈니스를 <span class="grad-text">다음 단계</span>로.</span>
+    </h1>
+
+    <p class="hero-sub">
+      <span id="typed-text"></span><span class="typed-cursor">|</span>
+    </p>
+
+    <p class="hero-desc">
+      Full-Stack Development · AI Solutions · IT Infrastructure<br>
+      Web · App · ERP · DB · Server · Cloud · System Integration
+    </p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary btn-lg">
+        <span>프로젝트 문의하기</span><i class="fa-solid fa-paper-plane"></i>
+      </a>
+      <a href="#services" class="btn btn-outline btn-lg">
+        <span>서비스 살펴보기</span><i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <span class="count-up" data-count="10">0</span><span class="plus">+</span>
+        <p>Years Experience</p>
+      </div>
+      <div class="hero-stat">
+        <span class="count-up" data-count="30">0</span><span class="plus">+</span>
+        <p>Projects Delivered</p>
+      </div>
+      <div class="hero-stat">
+        <span class="count-up" data-count="100">0</span><span class="plus">%</span>
+        <p>1:1 Direct Communication</p>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-down" aria-label="아래로 스크롤">
+    <span class="mouse"><span class="wheel"></span></span>
+    <small>SCROLL</small>
+  </a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span>WEB DEVELOPMENT</span><span class="sep">✦</span>
+    <span>APP DEVELOPMENT</span><span class="sep">✦</span>
+    <span>AI SOLUTIONS</span><span class="sep">✦</span>
+    <span>ERP SYSTEM</span><span class="sep">✦</span>
+    <span>DATABASE</span><span class="sep">✦</span>
+    <span>SERVER &amp; CLOUD</span><span class="sep">✦</span>
+    <span>SYSTEM INTEGRATION</span><span class="sep">✦</span>
+    <span>LEGACY API 연동</span><span class="sep">✦</span>
+    <span>WEB DEVELOPMENT</span><span class="sep">✦</span>
+    <span>APP DEVELOPMENT</span><span class="sep">✦</span>
+    <span>AI SOLUTIONS</span><span class="sep">✦</span>
+    <span>ERP SYSTEM</span><span class="sep">✦</span>
+    <span>DATABASE</span><span class="sep">✦</span>
+    <span>SERVER &amp; CLOUD</span><span class="sep">✦</span>
+    <span>SYSTEM INTEGRATION</span><span class="sep">✦</span>
+    <span>LEGACY API 연동</span><span class="sep">✦</span>
+  </div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="about section">
+  <div class="container about-grid">
+    <div class="about-visual" data-aos="fade-right">
+      <div class="about-card-stack">
+        <div class="profile-card">
+          <div class="profile-avatar">이재흔</div>
+          <h3>이재흔 <span>대표</span></h3>
+          <p class="profile-role">Founder · Full-Stack Engineer</p>
+          <ul class="profile-mini-list">
+            <li><i class="fa-solid fa-building-columns"></i> 대기업 그룹웨어 모듈 개발</li>
+            <li><i class="fa-solid fa-gears"></i> 그룹웨어 운영 &amp; 유지보수</li>
+            <li><i class="fa-solid fa-plug"></i> Legacy 시스템 API 연동</li>
+          </ul>
+        </div>
+        <div class="floating-chip chip-1"><i class="fa-brands fa-react"></i> React</div>
+        <div class="floating-chip chip-2"><i class="fa-brands fa-node"></i> Node.js</div>
+        <div class="floating-chip chip-3"><i class="fa-solid fa-robot"></i> AI</div>
+        <div class="floating-chip chip-4"><i class="fa-solid fa-cloud"></i> Cloud</div>
+        <div class="glow-ring"></div>
+      </div>
+    </div>
+
+    <div class="about-content" data-aos="fade-left">
+      <p class="section-eyebrow">ABOUT US</p>
+      <h2 class="section-title">코드로 성장을 설계하는<br>1인 IT 기업, <span class="grad-text">Code&amp;Rise</span></h2>
+      <p class="about-text">
+        코드앤라이즈는 대표 이재흔이 직접 기획부터 설계, 개발, 운영까지 전 과정을
+        책임지는 프리랜서 IT 스튜디오입니다. 대기업 그룹웨어 모듈 개발 및 운영,
+        각종 레거시 시스템 API 연동 경험을 바탕으로 안정적이고 실무에 강한
+        결과물을 만듭니다.
+      </p>
+      <p class="about-text">
+        중간 단계 없이 대표와 직접 소통하며 빠른 의사결정과 유연한 대응이
+        가능한 것이 코드앤라이즈의 가장 큰 강점입니다. Web, App, ERP, DB,
+        Server, Cloud, System Integration까지 — 하나의 창구에서 끝까지 책임집니다.
+      </p>
+
+      <div class="about-values">
+        <div class="value-item">
+          <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div>
+            <h4>빠른 실행력</h4>
+            <p>기획부터 배포까지 1인 체계로 신속한 의사결정</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <div>
+            <h4>검증된 신뢰성</h4>
+            <p>대기업 그룹웨어 운영 경험 기반의 안정적 설계</p>
+          </div>
+        </div>
+        <div class="value-item">
+          <div class="value-icon"><i class="fa-solid fa-comments"></i></div>
+          <div>
+            <h4>직접 소통</h4>
+            <p>담당자 없는 원스톱, 대표와의 1:1 커뮤니케이션</p>
+          </div>
+        </div>
+      </div>
+
+      <a href="#contact" class="btn btn-dark">
+        <span>함께 프로젝트 시작하기</span><i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section id="services" class="services section">
+  <div class="bg-noise"></div>
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">WHAT WE DO</p>
+      <h2 class="section-title">비즈니스 전 영역을 커버하는<br><span class="grad-text">풀스택 IT 서비스</span></h2>
+      <p class="section-desc">기획 단계의 컨설팅부터 개발, 인프라 구축, 운영까지 — 하나의 파트너로 충분합니다.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+        <span class="service-num">01</span>
+        <h3>Web Development</h3>
+        <p>기업 홈페이지, 관리자 시스템, 웹 플랫폼까지 반응형·고성능 웹 구축</p>
+        <ul><li>React / Next.js</li><li>반응형 UI/UX</li><li>SEO 최적화</li></ul>
+      </div>
+
+      <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <span class="service-num">02</span>
+        <h3>App Development</h3>
+        <p>iOS/Android 하이브리드 및 네이티브 앱 기획·개발·배포</p>
+        <ul><li>React Native</li><li>Flutter</li><li>앱스토어 배포</li></ul>
+      </div>
+
+      <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-icon"><i class="fa-solid fa-brain"></i></div>
+        <span class="service-num">03</span>
+        <h3>AI Solutions</h3>
+        <p>업무 자동화, 챗봇, LLM 연동 등 AI 기반 비즈니스 솔루션 설계</p>
+        <ul><li>LLM/RAG 연동</li><li>업무 자동화</li><li>데이터 분석</li></ul>
+      </div>
+
+      <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon"><i class="fa-solid fa-sitemap"></i></div>
+        <span class="service-num">04</span>
+        <h3>ERP System</h3>
+        <p>기업 맞춤형 그룹웨어·ERP 모듈 설계, 개발 및 운영</p>
+        <ul><li>그룹웨어 모듈 개발</li><li>결재/전자문서</li><li>운영 &amp; 유지보수</li></ul>
+      </div>
+
+      <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+        <span class="service-num">05</span>
+        <h3>Database</h3>
+        <p>안정적인 데이터 설계, 마이그레이션, 성능 튜닝 및 백업 전략</p>
+        <ul><li>MySQL / PostgreSQL</li><li>스키마 설계</li><li>쿼리 최적화</li></ul>
+      </div>
+
+      <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-icon"><i class="fa-solid fa-server"></i></div>
+        <span class="service-num">06</span>
+        <h3>Server &amp; Cloud</h3>
+        <p>서버 구축, 클라우드 인프라 설계 및 배포 자동화</p>
+        <ul><li>AWS / NCP</li><li>Docker / CI-CD</li><li>모니터링 &amp; 보안</li></ul>
+      </div>
+
+      <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-icon"><i class="fa-solid fa-diagram-project"></i></div>
+        <span class="service-num">07</span>
+        <h3>System Integration</h3>
+        <p>이기종 시스템 간 연동 설계 및 통합 아키텍처 구축</p>
+        <ul><li>API 설계/연동</li><li>시스템 아키텍처</li><li>데이터 동기화</li></ul>
+      </div>
+
+      <div class="service-card tilt-card" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-icon"><i class="fa-solid fa-code-branch"></i></div>
+        <span class="service-num">08</span>
+        <h3>Legacy API 연동</h3>
+        <p>노후 시스템 분석 후 최신 아키텍처와의 안전한 API 연동</p>
+        <ul><li>레거시 분석</li><li>API 게이트웨이</li><li>단계적 현대화</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAREER TIMELINE ============ -->
+<section id="career" class="career section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">CAREER PATH</p>
+      <h2 class="section-title">현장에서 쌓은 <span class="grad-text">실무 경험</span></h2>
+      <p class="section-desc">대기업 그룹웨어 개발·운영부터 1인 기업 창업까지의 여정</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-line"><span class="timeline-progress" id="timelineProgress"></span></div>
+
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">Founder</span>
+          <h3>Code&amp;Rise 창업</h3>
+          <p>1인 IT 프리랜서 기업 설립. Full-Stack Development, AI Solutions, IT Infrastructure 전문 서비스 제공 시작.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reverse" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">Legacy Integration</span>
+          <h3>각종 Legacy 시스템 API 연동</h3>
+          <p>노후화된 사내 시스템들을 분석하고 최신 아키텍처와 안전하게 연결하는 API 연동 프로젝트 다수 수행.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">Operation</span>
+          <h3>그룹웨어 운영</h3>
+          <p>대기업 그룹웨어 시스템의 안정적인 운영 및 유지보수, 장애 대응, 사용자 지원 업무 수행.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item reverse" data-aos="fade-up">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-tag">Development</span>
+          <h3>대기업 그룹웨어 모듈 개발</h3>
+          <p>전자결재, 게시판, 인사관리 등 대기업 그룹웨어 핵심 모듈 설계 및 개발 참여.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section id="portfolio" class="portfolio section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">SELECTED WORK</p>
+      <h2 class="section-title">프로젝트 <span class="grad-text">포트폴리오</span></h2>
+      <p class="section-desc">다양한 산업 도메인에서 진행한 대표 프로젝트 영역입니다.</p>
+    </div>
+
+    <div class="portfolio-grid">
+      <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="portfolio-media grad-1"><i class="fa-solid fa-building-columns"></i></div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Groupware</span>
+          <h3>대기업 그룹웨어 모듈</h3>
+          <p>전자결재 · 게시판 · 인사관리 모듈 설계/개발</p>
+        </div>
+      </div>
+      <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="80">
+        <div class="portfolio-media grad-2"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Integration</span>
+          <h3>Legacy 시스템 API 연동</h3>
+          <p>이기종 레거시 시스템 통합 및 API 게이트웨이 구축</p>
+        </div>
+      </div>
+      <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="160">
+        <div class="portfolio-media grad-3"><i class="fa-solid fa-robot"></i></div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">AI</span>
+          <h3>AI 업무 자동화 솔루션</h3>
+          <p>LLM 기반 사내 업무 자동화 및 데이터 분석 도구</p>
+        </div>
+      </div>
+      <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="0">
+        <div class="portfolio-media grad-4"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Cloud</span>
+          <h3>클라우드 인프라 구축</h3>
+          <p>서버 이전 및 클라우드 기반 배포 자동화 파이프라인</p>
+        </div>
+      </div>
+      <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="80">
+        <div class="portfolio-media grad-5"><i class="fa-solid fa-mobile-screen"></i></div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">App</span>
+          <h3>업무용 모바일 앱</h3>
+          <p>현장 업무 지원을 위한 하이브리드 모바일 애플리케이션</p>
+        </div>
+      </div>
+      <div class="portfolio-card" data-aos="zoom-in" data-aos-delay="160">
+        <div class="portfolio-media grad-6"><i class="fa-solid fa-database"></i></div>
+        <div class="portfolio-info">
+          <span class="portfolio-tag">Database</span>
+          <h3>DB 마이그레이션 &amp; 튜닝</h3>
+          <p>대용량 데이터 이관 및 쿼리 성능 최적화 프로젝트</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="process section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">HOW WE WORK</p>
+      <h2 class="section-title">간결하고 투명한 <span class="grad-text">진행 프로세스</span></h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step" data-aos="fade-up" data-aos-delay="0">
+        <span class="process-num">01</span>
+        <h3>상담 &amp; 요구분석</h3>
+        <p>비즈니스 목표와 요구사항을 정확히 파악합니다</p>
+      </div>
+      <div class="process-arrow" data-aos="fade-up"><i class="fa-solid fa-arrow-right"></i></div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="80">
+        <span class="process-num">02</span>
+        <h3>설계 &amp; 견적</h3>
+        <p>최적의 아키텍처와 일정, 비용을 투명하게 제안합니다</p>
+      </div>
+      <div class="process-arrow" data-aos="fade-up"><i class="fa-solid fa-arrow-right"></i></div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="160">
+        <span class="process-num">03</span>
+        <h3>개발 &amp; 구축</h3>
+        <p>대표가 직접 개발하며 진행 상황을 수시로 공유합니다</p>
+      </div>
+      <div class="process-arrow" data-aos="fade-up"><i class="fa-solid fa-arrow-right"></i></div>
+      <div class="process-step" data-aos="fade-up" data-aos-delay="240">
+        <span class="process-num">04</span>
+        <h3>배포 &amp; 운영</h3>
+        <p>안정적인 오픈 이후에도 지속적인 운영/유지보수를 지원합니다</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA BANNER ============ -->
+<section class="cta-banner">
+  <div class="cta-blob"></div>
+  <div class="container cta-inner" data-aos="zoom-in">
+    <h2>지금 바로 프로젝트를<br>이야기해보세요</h2>
+    <p>견적 문의부터 아이디어 상담까지, 대표와 직접 이야기 나눌 수 있습니다.</p>
+    <a href="#contact" class="btn btn-primary btn-lg">
+      <span>무료 상담 신청하기</span><i class="fa-solid fa-arrow-right"></i>
+    </a>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="contact section">
+  <div class="container">
+    <div class="section-head" data-aos="fade-up">
+      <p class="section-eyebrow">GET IN TOUCH</p>
+      <h2 class="section-title">프로젝트가 있으신가요?<br><span class="grad-text">지금 연락주세요</span></h2>
+      <p class="section-desc">아래 정보로 언제든 편하게 연락 주시면 빠르게 답변드리겠습니다.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-user"></i></div>
+          <div><h4>대표</h4><p>이재흔 (Founder)</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><h4>전화</h4><p><a href="tel:010-5241-3948">010-5241-3948</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><h4>이메일</h4><p><a href="mailto:jhlee-81@codeandrise.com">jhlee-81@codeandrise.com</a></p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-comment"></i></div>
+          <div><h4>카카오톡</h4><p>ID: jhlee-81</p></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
+          <div><h4>웹사이트</h4><p><a href="https://www.codeandrise.com" target="_blank" rel="noopener">www.codeandrise.com</a></p></div>
+        </div>
+
+        <div class="contact-social">
+          <a href="tel:010-5241-3948" class="social-btn" aria-label="전화하기"><i class="fa-solid fa-phone"></i></a>
+          <a href="mailto:jhlee-81@codeandrise.com" class="social-btn" aria-label="이메일 보내기"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="social-btn" aria-label="카카오톡"><i class="fa-solid fa-comment"></i></a>
+          <a href="https://www.codeandrise.com" target="_blank" rel="noopener" class="social-btn" aria-label="웹사이트"><i class="fa-solid fa-globe"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-aos="fade-left">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="cf-name">이름</label>
+            <input type="text" id="cf-name" name="name" required placeholder="홍길동">
+          </div>
+          <div class="form-group">
+            <label for="cf-contact">연락처 / 이메일</label>
+            <input type="text" id="cf-contact" name="contact" required placeholder="010-0000-0000 또는 email@example.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="cf-subject">문의 유형</label>
+          <select id="cf-subject" name="subject">
+            <option>웹 개발 문의</option>
+            <option>앱 개발 문의</option>
+            <option>AI 솔루션 문의</option>
+            <option>ERP / 그룹웨어 문의</option>
+            <option>서버 / 클라우드 문의</option>
+            <option>시스템 연동 문의</option>
+            <option>기타 문의</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cf-message">문의 내용</label>
+          <textarea id="cf-message" name="message" rows="5" required placeholder="프로젝트에 대해 자유롭게 설명해주세요."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg form-submit">
+          <span>문의 보내기</span><i class="fa-solid fa-paper-plane"></i>
+        </button>
+        <p class="form-note">전송 시 이메일 클라이언트가 열리며, jhlee-81@codeandrise.com 으로 바로 문의를 보낼 수 있습니다.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text">Code<span class="amp">&amp;</span>Rise</span>
+      <p>Full-Stack Development · AI Solutions · IT Infrastructure</p>
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h5>Menu</h5>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#career">Career</a>
+        <a href="#portfolio">Work</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href="#services">Web / App</a>
+        <a href="#services">AI Solutions</a>
+        <a href="#services">ERP / DB</a>
+        <a href="#services">Server / Cloud</a>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <a href="tel:010-5241-3948">010-5241-3948</a>
+        <a href="mailto:jhlee-81@codeandrise.com">jhlee-81@codeandrise.com</a>
+        <a href="https://www.codeandrise.com" target="_blank" rel="noopener">www.codeandrise.com</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Code&amp;Rise (코드앤라이즈). All rights reserved. — 이재흔</p>
+    <div class="visitor-counter">
+      <div class="visitor-stat">
+        <span class="visitor-label">TODAY</span>
+        <span class="visitor-num" id="visitorToday">0</span>
+      </div>
+      <span class="visitor-divider"></span>
+      <div class="visitor-stat">
+        <span class="visitor-label">TOTAL</span>
+        <span class="visitor-num" id="visitorTotal">0</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="맨 위로">
+  <svg viewBox="0 0 36 36" class="progress-ring">
+    <circle cx="18" cy="18" r="16"></circle>
+    <circle cx="18" cy="18" r="16" id="progressCircle"></circle>
+  </svg>
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
